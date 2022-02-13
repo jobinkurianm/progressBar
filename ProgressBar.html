@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <title>Progress Bar - Assignment Jobin Kurian</title>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <div class="progress light-green">
+        <div class="bar" style="width: 50%"><span class="lbl">50%</span></div>
+      </div>
+      <br />
+
+      <div class="progress orange">
+        <div class="bar" style="width: 50%"><span class="lbl">50%</span></div>
+      </div>
+      <br />
+
+      <div class="progress white">
+        <div class="bar" style="width: 50%"><span class="lbl">50%</span></div>
+      </div>
+      <br />
+
+      <div class="progress blue">
+        <div class="bar" style="width: 50%"><span class="lbl">50%</span></div>
+      </div>
+      <br />
+
+      <div class="progress yellow">
+        <div class="bar" style="width: 50%"><span class="lbl">50%</span></div>
+      </div>
+    </div>
+    <div class="expand-btn">
+      <button onclick="expand()">Finish</button>
+    </div>
+
+    <script>
+      function expand() {
+        var bars = document.getElementsByClassName("bar");
+        for (var i = 0; i < bars.length; i++) {
+          bars[i].style.width = "100%";
+          bars[i].children[0].innerHTML = "100%";
+        }
+      }
+    </script>
+  </body>
+</html>
