@@ -40,7 +40,6 @@ body {
   line-height: 20px;
   text-align: right;
   width: 50%;
-  transition: width 0.3s;
 }
 .progress .bar .lbl {
   padding: 5px 20px;
